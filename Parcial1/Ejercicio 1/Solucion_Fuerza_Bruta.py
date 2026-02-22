@@ -2,8 +2,9 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         
         """
-        Complejidad temporal O(n^2), porque en cada iteración se realiza una busqueda y eliminación.
-        Complejidad espacial O(n), por la lista que se crea para agregar las letras de t.
+        Complejidad temporal O(n^2)
+        Complejidad espacial O(n)
+        por cada letra de la palabra s se busca y elimina en una lista que contiene las letras de la palabra t.
         """
         if len(s) != len(t):
             return False
