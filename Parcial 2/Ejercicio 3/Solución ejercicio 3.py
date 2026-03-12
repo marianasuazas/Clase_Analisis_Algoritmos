@@ -4,7 +4,7 @@ class Solution:
         """
         Complejidad Temporal: O(n)
         Complejidad Espacial: O(1)
-        El algoritmo recorre el arreglo manteniendo el índice más lejano que se puede alcanzar y verifica si en algún momento se puede llegar al último índice.
+        El algoritmo recorre el arreglo manteniendo el índice más lejano que se puede alcanzar y verifica si el índice actual supera ese alcance, no es posible continuar ni llegar al último índice.
         """
 
         max_reach = 0
