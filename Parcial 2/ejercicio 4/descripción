@@ -1,0 +1,3 @@
+La solución recorre el arreglo de precios una sola vez desde el segundo día. En cada posición compara el precio actual con el del día anterior, y si el precio subió, acumula esa diferencia en la variable profit. Al final retorna el total acumulado.
+La justificación voraz es que cualquier ganancia obtenida en un intervalo largo es equivalente a sumar todas las ganancias diarias positivas dentro de ese intervalo, por lo que tomar la decisión localmente cada día es óptimo y nunca deja ganancia sin capturar.
+La complejidad temporal es O(n) porque se hace un único recorrido del arreglo, y la complejidad espacial es O(1) porque solo se utiliza una variable adicional independientemente del tamaño de la entrada.
